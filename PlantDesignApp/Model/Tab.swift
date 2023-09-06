@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct Tab: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct Tab_Previews: PreviewProvider {
-    static var previews: some View {
-        Tab()
-    }
+
+// MARK: Tabs
+
+enum Tab: String, CaseIterable{
+    case home = "Home"
+    case scan = "Scan"
+    case folder = "Files"
+    case cart = "Cart"
 }
